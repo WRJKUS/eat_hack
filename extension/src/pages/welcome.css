@@ -1,0 +1,62 @@
+@import "./base.css";
+@import "./consent.css";
+
+.top {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.top .inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+.wrap > * + *,
+.stack > * + * {
+  margin-top: 16px;
+}
+.consent {
+  font-size: 14px;
+}
+.consent h2 {
+  font-size: 22px;
+}
+.agree {
+  font-size: 14px;
+}
+.btn.big {
+  padding: 12px 18px;
+  font-size: 15px;
+}
+.hero {
+  text-align: center;
+  padding: 28px 24px;
+}
+.hero .big {
+  font-size: 44px;
+  line-height: 1;
+}
+.hero h1 {
+  font-size: 24px;
+  margin: 10px 0 6px;
+}
+ol.next {
+  margin: 0;
+  padding-left: 20px;
+}
+ol.next li {
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "extension",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@cm/shared": "*",
+    "@rrweb/record": "2.1.7"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.0",
+    "esbuild": "^0.25.0",
+    "jsdom": "^25.0.1",
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

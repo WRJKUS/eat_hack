@@ -1,0 +1,151 @@
+@import "./base.css";
+
+.top {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.top .inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+.wrap > * + * {
+  margin-top: 16px;
+}
+.page-head h1 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.page-head {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.page-head .actions {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+.page-head .actions .btn {
+  padding: 10px 18px;
+  font-size: 14px;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+.stat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  box-shadow: var(--shadow);
+}
+.stat b {
+  display: block;
+  font-size: 20px;
+  font-variant-numeric: tabular-nums;
+}
+.stat span {
+  font-size: 12px;
+  color: var(--muted);
+}
+table.ctx {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+table.ctx td {
+  padding: 8px 6px;
+  border-top: 1px solid var(--border);
+  vertical-align: middle;
+}
+table.ctx tr:first-child td {
+  border-top: 0;
+}
+table.ctx td.when {
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  width: 1%;
+}
+table.ctx td.what {
+  word-break: break-word;
+}
+table.ctx td.act {
+  width: 1%;
+  text-align: right;
+}
+.pages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.page-card {
+  background: var(--surface-2);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.page-card .tpl {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--accent);
+}
+.page-card .ttl {
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-card svg {
+  width: 100%;
+  height: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: block;
+}
+.list .item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+.list .item:first-of-type {
+  border-top: 0;
+}
+.list .grow {
+  flex: 1;
+  min-width: 0;
+}
+.empty {
+  color: var(--muted);
+  font-size: 13px;
+  padding: 6px 0;
+}
+.done-hero {
+  text-align: center;
+  padding: 28px 20px;
+}
+.done-hero .big {
+  font-size: 40px;
+}
+.done-hero h1 {
+  font-size: 22px;
+  margin: 8px 0 6px;
+}

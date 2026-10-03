@@ -1,0 +1,26 @@
+{
+  "name": "cookie-monster",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Opt-in eye-tracking shopper research: browser extension + local gaze helper + owner dashboard",
+  "workspaces": [
+    "packages/shared",
+    "extension",
+    "server",
+    "dashboard",
+    "demo-shop",
+    "e2e"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev -w server",
+    "dev:dashboard": "npm run dev -w dashboard",
+    "dev:shop": "npm run dev -w demo-shop",
+    "build:extension": "npm run build -w extension",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "e2e": "npm run e2e -w e2e"
+  },
+  "engines": {
+    "node": ">=20.17"
+  }
+}

@@ -1,0 +1,139 @@
+@import "./base.css";
+@import "./consent.css";
+
+html,
+body {
+  width: 380px;
+}
+body {
+  min-height: 200px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px 12px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.top h1 {
+  font-size: 15px;
+  font-weight: 700;
+}
+main {
+  padding: 12px;
+}
+main > * + * {
+  margin-top: 10px;
+}
+
+.session-live {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.session-live .timer {
+  font-variant-numeric: tabular-nums;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.session-live .shop {
+  font-weight: 600;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.actions .btn {
+  flex: 1;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  margin: 10px 0 12px;
+}
+.status-grid .cell {
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 7px 8px;
+  font-size: 11.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+}
+.status-grid .cell b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.calib {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+.calib .txt {
+  flex: 1;
+  font-size: 12.5px;
+}
+
+
+.list .item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+  font-size: 12.5px;
+}
+.list .item:first-of-type {
+  border-top: 0;
+  padding-top: 2px;
+}
+.list .item .grow {
+  flex: 1;
+  min-width: 0;
+}
+
+details.settings summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 650;
+  display: flex;
+  align-items: center;
+}
+details.settings summary::after {
+  content: "▸";
+  margin-left: auto;
+  transition: transform 0.15s;
+}
+details.settings[open] summary::after {
+  transform: rotate(90deg);
+}
+details.settings .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+footer.foot {
+  padding: 2px 16px 14px;
+  font-size: 11px;
+  color: var(--faint);
+  text-align: center;
+}
